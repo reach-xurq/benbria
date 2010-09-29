@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ManagePagingPhones</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ManagePagingPhones</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_admin_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_paging_config_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View, edit, or delete pageable phones in list form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage Pageable Phones</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage Paging Phones</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phonename</td>
+	<td>${pid}${pid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phoneextension</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage Pageable Phones</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${pid}${pid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage Paging Phones</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phonename</td>
+	<td>${pid}${pid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phoneextension</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Duplicated extension ${recordNumber4}..</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phonename</td>
+	<td>${pid}${pid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phoneextension</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${pid}${pid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>sidecontent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${pid}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>phonelist.0.1</td>
+	<td>Extension</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${pid}${pid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=${pid}${pid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Edit Paging Phone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_paging_config_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View, edit, or delete pageable phones in list form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage Pageable Phones</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phonename</td>
+	<td>${pid}${recordNumber5}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phoneextension</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${pid}${recordNumber4}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phonename</td>
+	<td>${pid}${recordNumber4}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>phoneextension</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Duplicated extension ${recordNumber4}..</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>The phone will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${pid}${recordNumber5}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>The phone will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>${pid}${recordNumber5}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>The phone will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>${pid}${recordNumber4}</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

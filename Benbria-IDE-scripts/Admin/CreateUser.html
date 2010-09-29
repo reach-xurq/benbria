@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>CreateUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/blazecast/admin/userlist.jsf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>${uid}${uid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>${aupd}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>passwordv</td>
+	<td>${aupd}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>isadmin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>${cid}${uid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>copy_p_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>savenew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Successfully created user &quot;${cid}${uid}&quot;. Create another user using the form below.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>${text}${uid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>${rupd}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>passwordv</td>
+	<td>${rupd}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>copy_p_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ptype_e_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>ext</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createUser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${text}${uid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@id='contactlist']/tbody/tr[1]/td[3]/a</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_admin_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage users</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_paging_config_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage paging</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View, edit, or delete pageable phones in list form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage Pageable Phones</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//table[@id='phonelist']/tbody/tr/td[3]</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@id='phonelist']/tbody/tr/td[2]</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>The phone will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>${cid}${text}</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ManageUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ManageUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_admin_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete user ${cid}${text} from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${text}${uid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete user ${cid}${text} from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseOkOnNextConfirmationAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${text}${uid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>create_account_link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>username</td>
+	<td>${uid}${SA}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>password</td>
+	<td>${rupd}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>passwordv</td>
+	<td>${rupd}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>${cid}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>requestAccess</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>message:nextpage</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

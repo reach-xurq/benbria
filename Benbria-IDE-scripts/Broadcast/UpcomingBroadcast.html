@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>UpcomingBroadcast</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UpcomingBroadcast</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/blazecast/broadcast/schedulelist.jsf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().jQuery.active == 0</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>schedulelist.1.3</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//body</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete occurrence</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete this scheduled broadcast occurrence from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete series</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete ALL occurrences of this scheduled broadcast series from the system. Continue?</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,3 @@
+username,password,email,pin,status,access,first name,last name,contact method,home phone 1,home phone 2,work phone 1,work phone 2,mobile phone 1,mobile phone 2,email 1,email 2,page phone,notes,address city,address country,address line 1,address line 2,address zip,address state,group
+qsp,17ba791499db98433b80f37c5fbc89b87084b,qushaoping1@gmail.com,,Approved,REGULAR,Qu,Shaoping,0:E_MAIL:qushaoping1@gmail.com,,,,,,,qushaoping1@gmail.com,,,,Beijing,China,101,,100021,Beijing,
+vactowbb,7110eda4d09e62aa5e4a390b0a572acd2c220,vactowb@gmail.com,,Approved,ADMIN,Vacto,Wang,0:CELLULAR_PHONE:18988888888|1:E_MAIL:vactowb@gmail.com,,,,,18988888888,,vactowb@gmail.com,,,add notes here,beijing,,road 38,greetwall building,100191,beijing,

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>DeleteManageUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DeleteManageUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_admin_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${uid}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${uid}${uid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//table[@id='userlist']/tbody/tr[1]/td[2]</td>
+	<td>${cid}${uid}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete user ${cid}${uid} from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseOkOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>${uid}${uid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotText</td>
+	<td>//table[@id='contactlist']/tbody/tr[1]/td[2]/a</td>
+	<td>${cid}${uid}</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

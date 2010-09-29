@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ManageMaps</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ManageMaps</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_admin_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_paging_config_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_browse_location_map</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='floorplanlist']/tbody/tr[1]/td[1]/a/strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage Floor Plans</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit map</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>remove</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete this floor plan from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage Floor Plans</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>title</td>
+	<td>${mid}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${mid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit devices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnCancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage Floor Plans</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit devices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>btnAddSpeaker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mapspace']/div[2]/input[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='mapspace']/div[2]/input[1]</td>
+	<td>${sid}${recordNumber5}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='mapspace']/div[2]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='mapspace']/div[2]/input[2]</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>btnAddPhone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//div[@id='mapspace']/div[4]/input[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='mapspace']/div[4]/input[1]</td>
+	<td>${pid}${recordNumber4}</td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>//div[@id='mapspace']/div[4]/input[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//div[@id='mapspace']/div[4]/input[2]</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=remove from map</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=remove from map</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>btnSave</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>btnSave</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Pageable devices have been saved successfully.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>message:nextpage</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

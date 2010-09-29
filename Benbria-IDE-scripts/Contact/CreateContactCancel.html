@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>CreateContactCancel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateContactCancel</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage contacts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>${cid}${text}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>contactlist.1.2</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete ${cid}${text} from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>${cid}${text}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTable</td>
+	<td>contactlist.1.1</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${cid}${text}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete ${cid}${text} from the system. Continue?</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

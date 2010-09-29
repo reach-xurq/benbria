@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.220.77" />
+<title>SaveAndCreateAnotherContact</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SaveAndCreateAnotherContact</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_contact</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>firstname</td>
+	<td>${cid}${recordNumber1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>lastname</td>
+	<td>${cid}${recordNumber1}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>address1</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>address2</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>city</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>state</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>zipcode</td>
+	<td>${code}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>country</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ptype_h_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='items']/tbody/tr[1]/td/label[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>items:0:pnumber</td>
+	<td>${recordNumber1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ptype_m_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='items']/tbody/tr[2]/td/label[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>items:1:pnumber</td>
+	<td>${code}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ptype_e_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='items']/tbody/tr[3]/td/label[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>ptype_e_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>items:2:pnumber</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>notes</td>
+	<td>${extratext}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>savenew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//form[@id='contact']/div[1]/fieldset[3]/span</td>
+	<td>The number of characters cannot exceed 255 characters<br />Please shorten by 1 characters</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>notes</td>
+	<td>${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>savenew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Successfully created contact &quot;${cid}${recordNumber1} ${cid}${recordNumber1}&quot;. Create another contact using the form below.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Contact Information</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${cid}${recordNumber1} ${cid}${recordNumber1}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>contactlist.1.1</td>
+	<td>${cid}${recordNumber1}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This will permanently delete ${cid}${recordNumber1} ${cid}${recordNumber1} from the system. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='content']/div/div[1]/div/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>${cid}${recordNumber1} ${cid}${recordNumber1}</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.215.37/" />
+<title>NewbroadcastCancel</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NewbroadcastCancel</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/blazecast/broadcast/createmessage.jsf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().jQuery.active == 0</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_broadcast_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_broadcast</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_broadcast_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_create_broadcast</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>next_step</td>
+	<td>Next Step</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>next_step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>jsfsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>broadcastTitle</td>
+	<td>${bid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>broadcastDescription</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>send</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Choose at least one broadcast medium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>email_msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>emailtitle</td>
+	<td>${bid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>emailmsg</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>next_step</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>jsfsubmit</td>
+	<td>Next Step</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>jsfsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>broadcastTitle</td>
+	<td>${bid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>broadcastDescription</td>
+	<td>${text}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>send</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Choose at least one recipient for the broadcast</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

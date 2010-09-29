@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ManageContactsUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ManageContactsUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_contact_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>searchbox</td>
+	<td>${cid}${SA} ${cid}${SA}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>searchsubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=view</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>alertbox</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=OK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@id='contactlist']/tbody/tr[1]/td[5]/span[1]</td>
+	<td>editYou do not have permission to edit this contact</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@id='contactlist']/tbody/tr[1]/td[5]/span[2]</td>
+	<td>deleteYou do not have permission to delete this contact</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='content']/div/div[1]/div/a/img</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="" />
+<title>ViewPagingSpeakers</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ViewPagingSpeakers</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/blazecast/login.jsf</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_admin_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_paging_config_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View, edit, or delete speakers in list form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>BlazeCast - Manage Paging Speakers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>speakername</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakername</td>
+	<td>${sid}${sid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakerextension</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>speakerlist.0.1</td>
+	<td>Extension</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${sid}${sid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>speakername</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakername</td>
+	<td>${sid}${sid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakerextension</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BlazeCast - Manage Paging Speakers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//table[@id='speakerlist']/tbody/tr[1]/td[2]</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>createnew</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>speakername</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakername</td>
+	<td>${sid}${sid}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakerextension</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitCreate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Duplicated extension ${recordNumber5}..</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=${sid}${sid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//form[@id='configurespeakers']/h1</td>
+	<td>Configure Paging Devices</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='configurespeakers']/h1</td>
+	<td>Configure Paging Devices</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_paging_config_main</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>hdr_browse_page_speaker</td>
+	<td>View paging speakers</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_browse_page_speaker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=edit</td>
+	<td>edit</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForCondition</td>
+	<td>selenium.browserbot.getUserWindow().jQuery.active == 0</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>${sid}${sid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${sid}${sid}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTextPresent</td>
+	<td>Edit an existing speaker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakername</td>
+	<td>${sid}${recordNumber5}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakerextension</td>
+	<td>${recordNumber5}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>speakerlist.0.1</td>
+	<td>Extension</td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${sid}${recordNumber5}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='sidenav']/div[2]/ul/li[1]/a/strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>hdr_browse_page_speaker</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakername</td>
+	<td>${pid}${recordNumber4}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>speakerextension</td>
+	<td>${recordNumber4}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>submitUpdate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Duplicated extension ${recordNumber4}..</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This speaker will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>${sid}${recordNumber5}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This speaker will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>${sid}${recordNumber5}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=delete</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>This speaker will be permanently deleted. Continue?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>${sid}${recordNumber4}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseCancelOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
