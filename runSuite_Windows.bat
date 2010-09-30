@@ -12,5 +12,5 @@ REM remove previous results
 del %SUITE%_results.html
 REM use node-specific variables
 copy /Y "%WORKSPACE%\Benbria-IDE-scripts\Util\OverwriteGlobalVariables_Hudson_Windows.html" "%WORKSPACE%\Benbria-IDE-scripts\Util\OverwriteGlobalVariables.html"
-java -jar %SELENIUM_SERVER_JAR% -port 4444 -htmlSuite %BROWSER% %XBOSOFT_TEST_URL% "%WORKSPACE%/Benbria-IDE-scripts/%SUITE%TestSuite.html" %SUITE%_results.html -userExtensions %SELENIUM_USER_EXTENSIONS% -timeout %SELENIUM_TIMEOUT% %3
+java -jar %SELENIUM_SERVER_JAR% -port 4447 -htmlSuite %BROWSER% %XBOSOFT_TEST_URL% "%WORKSPACE%/Benbria-IDE-scripts/%SUITE%TestSuite.html" %SUITE%_results.html -userExtensions %SELENIUM_USER_EXTENSIONS% -timeout %SELENIUM_TIMEOUT% %3
 
